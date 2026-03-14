@@ -7,12 +7,11 @@ export default function Footer() {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8 mb-16">
           <div className="md:col-span-1">
-            <Link href="/" className="text-3xl font-black tracking-tighter flex flex-col uppercase leading-none mb-6">
-              RUBICON
-              <span className="text-[0.45em] tracking-[0.2em] font-bold text-[var(--color-accent)]">Flooring</span>
+            <Link href="/" className="inline-flex bg-white/95 px-5 py-4 rounded-xl mb-6 shadow-sm">
+              <img src="/logo.png" alt="Rubicon Flooring" className="h-14 md:h-16 w-auto object-contain" />
             </Link>
-            <p className="text-gray-300 text-sm leading-relaxed mb-6">
-              Elevating spaces with premium flooring solutions. From plush carpets to enduring hardwood, we bring modern elegance into your home.
+            <p className="text-gray-300 text-sm leading-relaxed mb-6 max-w-sm">
+              Elevating spaces with premium flooring solutions.
             </p>
             <div className="flex gap-4 text-gray-400">
               <a href="#" className="hover:text-[#D4AF37] transition-colors"><Instagram className="w-5 h-5" /></a>

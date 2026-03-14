@@ -65,7 +65,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden pt-20 pb-32">
           {/* Background Text Element */}
-          <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none opacity-[0.03]">
+          <div className="absolute top-[38%] left-0 w-full flex justify-center z-0 pointer-events-none opacity-[0.03]">
             <h1 className="text-[20vw] font-black leading-none tracking-tighter text-[var(--color-primary-foreground)] whitespace-nowrap">
               RUBICON
             </h1>
@@ -86,10 +86,57 @@ export default function Home() {
               <p className="text-lg md:text-xl text-gray-500 mb-8 max-w-xl mx-auto font-medium">
                 Premium flooring solutions that blend enduring quality with modern elegance.
               </p>
-              <Link href="/collections" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[var(--color-primary-foreground)] text-white font-semibold rounded-full hover:bg-[var(--color-accent)] transition-colors duration-300">
+              <Link href="/collections" className="relative z-30 inline-flex items-center justify-center gap-2 px-8 py-4 bg-[var(--color-primary-foreground)] text-white font-semibold rounded-full hover:bg-[var(--color-accent)] transition-colors duration-300">
                 Explore Collections
                 <ArrowRight className="w-5 h-5" />
               </Link>
+              
+              {/* Floating Emojis Decoration */}
+              <div className="absolute inset-0 pointer-events-none z-10 hidden md:block">
+                <motion.div 
+                  animate={{ y: [0, -20, 0], rotate: [0, 10, -10, 0] }} 
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} 
+                  className="absolute top-[20%] left-[10%] text-5xl opacity-40 drop-shadow-md"
+                >
+                  🪵
+                </motion.div>
+                <motion.div 
+                  animate={{ y: [0, 15, 0], rotate: [0, -15, 15, 0] }} 
+                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }} 
+                  className="absolute top-[40%] left-[20%] text-4xl opacity-50 drop-shadow-md"
+                >
+                  ✨
+                </motion.div>
+                <motion.div 
+                  animate={{ y: [0, -15, 0], rotate: [0, 20, 0] }} 
+                  transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }} 
+                  className="absolute top-[15%] right-[15%] text-5xl opacity-60 drop-shadow-md"
+                >
+                  🏠
+                </motion.div>
+                <motion.div 
+                  animate={{ y: [0, 25, 0], rotate: [0, -10, 0] }} 
+                  transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1.5 }} 
+                  className="absolute top-[45%] right-[25%] text-4xl opacity-40 drop-shadow-md"
+                >
+                  🪚
+                </motion.div>
+                <motion.div 
+                  animate={{ scale: [1, 1.2, 1], rotate: [0, 5, -5, 0] }} 
+                  transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }} 
+                  className="absolute top-[25%] right-[5%] text-3xl opacity-30 drop-shadow-sm"
+                >
+                  🌟
+                </motion.div>
+                <motion.div 
+                  animate={{ scale: [1, 1.1, 1], y: [0, -10, 0] }} 
+                  transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }} 
+                  className="absolute top-[60%] left-[5%] text-4xl opacity-30 drop-shadow-sm"
+                >
+                  📐
+                </motion.div>
+              </div>
+
             </motion.div>
 
             {/* Floating Cards Display (Parallax style) */}
@@ -105,7 +152,7 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/products/14.webp" 
+                       src="/products/hero1.jpg" 
                        alt="Premium Hardwood" 
                        className="w-full h-full object-cover"
                        onError={(e) => {
@@ -126,7 +173,7 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/products/23.webp" 
+                       src="/products/hero2.jpg" 
                        alt="Luxury Vinyl" 
                        className="w-full h-full object-cover"
                        onError={(e) => {
@@ -147,7 +194,7 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/products/2.webp" 
+                       src="/products/hero3.jpg" 
                        alt="Artisan Carpet" 
                        className="w-full h-full object-cover"
                          onError={(e) => {
@@ -180,9 +227,9 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { title: "Carpets", href: "/collections/carpets", image: "https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&q=80&w=800" },
-                { title: "Hardwood", href: "/collections/hardwood", image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=800" },
-                { title: "Laminate & Vinyl", href: "/collections/vinyl", image: "https://images.unsplash.com/photo-1505691938859-8c8314c5ce5e?auto=format&fit=crop&q=80&w=800" },
+                { title: "Carpets", href: "/collections/carpets", image: "/products/cat1.jpg" },
+                { title: "Hardwood", href: "/collections/hardwood", image: "/products/cat2.jpg" },
+                { title: "Laminate & Vinyl", href: "/collections/vinyl", image: "/products/cat3.jpg" },
               ].map((category, i) => (
                 <Link href={category.href} key={i}>
                   <motion.div
