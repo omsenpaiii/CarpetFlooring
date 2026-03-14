@@ -11,25 +11,25 @@ const featuredProducts = [
   {
     title: "Artisan Wool Carpet",
     category: "Premium Carpet",
-    price: "$120 / sq.ft",
-    image: "/products/1.webp",
+    price: "$120 / sqm",
+    image: "/products/asiancarpet.jpg",
   },
   {
     title: "European White Oak",
     category: "Hardwood",
-    price: "$180 / sq.ft",
+    price: "$180 / sqm",
     image: "/products/3.webp",
   },
   {
     title: "Midnight Slate Luxury Vinyl",
     category: "Vinyl Plank",
-    price: "$90 / sq.ft",
-    image: "/products/15.webp",
+    price: "$90 / sqm",
+    image: "/products/vinyl.jpg",
   },
   {
     title: "Cashmere Soft Shag",
     category: "Plush Carpet",
-    price: "$150 / sq.ft",
+    price: "$150 / sqm",
     image: "/products/9.webp",
   },
 ];
@@ -38,7 +38,7 @@ const features = [
   {
     icon: <Star className="w-6 h-6" />,
     title: "Premium Quality",
-    description: "Sourced from the finest materials worldwide to ensure lasting beauty and durability.",
+    description: "Sourced from Australian materials worldwide to ensure lasting beauty and durability.",
   },
   {
     icon: <Shield className="w-6 h-6" />,
@@ -53,7 +53,7 @@ const features = [
   {
     icon: <Truck className="w-6 h-6" />,
     title: "Free Shipping",
-    description: "Complimentary shipping on all orders over $2,000 across the continental US.",
+    description: "Complimentary shipping on all orders over $2,000 across Australia.",
   },
 ];
 
@@ -63,15 +63,15 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 overflow-x-hidden pt-20">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden pt-20 pb-32">
+        <section className="relative min-h-[90vh] flex items-center justify-center bg-white overflow-hidden pt-10 pb-20">
           {/* Background Text Element */}
-          <div className="absolute top-[38%] left-0 w-full flex justify-center z-0 pointer-events-none opacity-[0.03]">
+          <div className="absolute top-[28%] left-0 w-full flex justify-center z-0 pointer-events-none opacity-[0.03]">
             <h1 className="text-[20vw] font-black leading-none tracking-tighter text-[var(--color-primary-foreground)] whitespace-nowrap">
               RUBICON
             </h1>
           </div>
           
-          <div className="container relative z-10 mx-auto px-6 max-w-7xl flex flex-col items-center justify-center h-full gap-16 mt-16">
+          <div className="container relative z-10 mx-auto px-6 max-w-7xl flex flex-col items-center justify-center h-full gap-8 mt-4">
             
             {/* Minimal Copy */}
             <motion.div
@@ -135,12 +135,19 @@ export default function Home() {
                 >
                   📐
                 </motion.div>
+                <motion.div 
+                  animate={{ y: [0, -20, 0], rotate: [0, 15, -5, 0] }} 
+                  transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 1.2 }} 
+                  className="absolute top-[10%] left-[30%] text-4xl opacity-50 drop-shadow-md"
+                >
+                  🧶
+                </motion.div>
               </div>
 
             </motion.div>
 
             {/* Floating Cards Display (Parallax style) */}
-            <div className="relative w-full max-w-5xl h-[400px] md:h-[500px] z-10 mt-12 mb-24">
+            <div className="relative w-full max-w-5xl h-[400px] md:h-[500px] z-10 mt-8 mb-20">
               
               {/* Card 1 (Left) */}
               <motion.div
@@ -227,8 +234,8 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { title: "Carpets", href: "/collections/carpets", image: "/products/cat1.jpg" },
-                { title: "Hardwood", href: "/collections/hardwood", image: "/products/cat2.jpg" },
+                { title: "Carpets", href: "/collections/carpets", image: "/products/carpets.jpg" },
+                { title: "Hardwood & Timber", href: "/collections/hardwood", image: "/products/cat2.jpg" },
                 { title: "Laminate & Vinyl", href: "/collections/vinyl", image: "/products/cat3.jpg" },
               ].map((category, i) => (
                 <Link href={category.href} key={i}>

@@ -17,7 +17,7 @@ export default function ProductCard({ title, category, price, image, delay = 0 }
   const [imgSrc, setImgSrc] = useState(image);
 
   return (
-    <Link href={`/collections/${title.toLowerCase().replace(/\\s+/g, '-')}`}>
+    <Link href={`/collections/${title.toLowerCase().replace(/\s+/g, '-')}`}>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

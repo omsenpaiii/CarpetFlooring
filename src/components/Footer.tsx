@@ -11,7 +11,7 @@ export default function Footer() {
               <img src="/logo.png" alt="Rubicon Flooring" className="h-14 md:h-16 w-auto object-contain" />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed mb-6 max-w-sm">
-              Elevating spaces with premium flooring solutions.
+              Elevating Australian spaces with premium flooring solutions.
             </p>
             <div className="flex gap-4 text-gray-400">
               <a href="#" className="hover:text-[#D4AF37] transition-colors"><Instagram className="w-5 h-5" /></a>
@@ -24,7 +24,7 @@ export default function Footer() {
             <h4 className="text-lg font-medium mb-6">Collections</h4>
             <ul className="space-y-4 text-sm text-gray-400">
               <li><Link href="/collections/carpet" className="hover:text-white transition-colors">Premium Carpets</Link></li>
-              <li><Link href="/collections/hardwood" className="hover:text-white transition-colors">Hardwood</Link></li>
+              <li><Link href="/collections/hardwood" className="hover:text-white transition-colors">Hardwood & Timber</Link></li>
               <li><Link href="/collections/laminate" className="hover:text-white transition-colors">Laminate</Link></li>
               <li><Link href="/collections/vinyl" className="hover:text-white transition-colors">Luxury Vinyl</Link></li>
             </ul>

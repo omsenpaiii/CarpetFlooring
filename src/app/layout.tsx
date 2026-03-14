@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/context/CartContext";
+import CartSidebar from "@/components/CartSidebar";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -8,8 +10,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Rubicon Flooring | Premium Carpet & Hardwood",
-  description: "Modern, premium carpets and flooring solutions for your home.",
+  title: "Rubicon Flooring | Premium Carpet & Hardwood Australia",
+  description: "Modern, premium carpets and flooring solutions for your home in Australia.",
 };
 
 export default function RootLayout({
@@ -19,8 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${outfit.variable} font-sans antialiased bg-primary text-foreground min-h-screen flex flex-col`}>
-        {children}
+      <body className={`${outfit.className} antialiased bg-white text-gray-900`}>
+        <CartProvider>
+          {children}
+          <CartSidebar />
+        </CartProvider>
       </body>
     </html>
   );

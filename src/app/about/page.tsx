@@ -60,7 +60,7 @@ export default function About() {
                 </h2>
                 <div className="space-y-6 text-gray-600 text-lg">
                   <p>
-                    At Rubicon Flooring, we believe that every great room starts from the ground up. What began as a small boutique showroom has grown into a leading destination for premium hardwood, plush carpets, and luxury vinyl.
+                    At Rubicon Flooring, we believe that every great room starts from the ground up. What began as a small boutique Australian showroom has grown into a leading destination for premium hardwood, plush carpets, and luxury vinyl.
                   </p>
                   <p>
                     Our mission is simple: to provide our clients with exceptional materials that blend timeless craftsmanship with contemporary design. We curate our collections meticulously, ensuring that every plank and every thread meets our rigorous standards for durability and aesthetics.
@@ -97,7 +97,7 @@ export default function About() {
              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                 {[
                   { icon: <Clock className="w-8 h-8"/>, stat: "18+", label: "Years of Experience" },
-                  { icon: <Users className="w-8 h-8"/>, stat: "10k+", label: "Happy Customters" },
+                  { icon: <Users className="w-8 h-8"/>, stat: "10k+", label: "Happy Customers" },
                   { icon: <Award className="w-8 h-8"/>, stat: "150+", label: "Premium Collections" },
                 ].map((item, i) => (
                    <motion.div

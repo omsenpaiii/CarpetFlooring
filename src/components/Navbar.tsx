@@ -4,10 +4,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useCart } from "@/context/CartContext";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const { cartCount, toggleCart } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,9 +54,16 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <button className="p-2 text-gray-800 hover:bg-gray-100/50 rounded-full transition-colors relative">
+          <button 
+            onClick={toggleCart}
+            className="p-2 text-gray-800 hover:bg-gray-100/50 rounded-full transition-colors relative"
+          >
             <ShoppingCart className="w-5 h-5" />
-            <span className="absolute top-0 right-0 w-2 h-2 bg-[var(--color-accent)] rounded-full"></span>
+            {cartCount > 0 && (
+              <span className="absolute top-0 right-0 w-4 h-4 bg-[var(--color-accent)] text-white text-[10px] font-bold flex items-center justify-center rounded-full">
+                {cartCount}
+              </span>
+            )}
           </button>
         </div>
 
@@ -88,8 +97,14 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="pt-4">
-                <button className="flex items-center gap-2 text-lg font-medium">
-                  <ShoppingCart className="w-5 h-5" /> Cart (2)
+                <button 
+                  onClick={() => {
+                    setIsOpen(false);
+                    toggleCart();
+                  }}
+                  className="flex items-center gap-2 text-lg font-medium"
+                >
+                  <ShoppingCart className="w-5 h-5" /> Cart {cartCount > 0 ? `(${cartCount})` : ""}
                 </button>
               </div>
             </div>

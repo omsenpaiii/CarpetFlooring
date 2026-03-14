@@ -6,14 +6,14 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 
 const allProducts = [
-  { title: "Artisan Wool Carpet", category: "Premium Carpet", price: "$120 / sq.ft", image: "/products/1.webp" },
-  { title: "European White Oak", category: "Hardwood", price: "$180 / sq.ft", image: "/products/3.webp" },
-  { title: "Midnight Slate Luxury Vinyl", category: "Vinyl Plank", price: "$90 / sq.ft", image: "/products/15.webp" },
-  { title: "Cashmere Soft Shag", category: "Plush Carpet", price: "$150 / sq.ft", image: "/products/9.webp" },
-  { title: "Distressed Walnut", category: "Hardwood", price: "$165 / sq.ft", image: "/products/11.webp" },
-  { title: "Modern Chevron", category: "Patterned Hardwood", price: "$210 / sq.ft", image: "/products/21.webp" },
-  { title: "Nordic Ash", category: "Laminate", price: "$65 / sq.ft", image: "/products/19.webp" },
-  { title: "Velvet Dream", category: "Premium Carpet", price: "$130 / sq.ft", image: "/products/6.webp" },
+  { title: "Artisan Wool Carpet", category: "Premium Carpet", price: "$120 / sqm", image: "/products/asiancarpet.jpg" },
+  { title: "European White Oak", category: "Hardwood & Timber", price: "$180 / sqm", image: "/products/3.webp" },
+  { title: "Midnight Slate Luxury Vinyl", category: "Vinyl Plank", price: "$90 / sqm", image: "/products/vinyl.jpg" },
+  { title: "Cashmere Soft Shag", category: "Plush Carpet", price: "$150 / sqm", image: "/products/9.webp" },
+  { title: "Distressed Walnut", category: "Hardwood & Timber", price: "$165 / sqm", image: "/products/11.webp" },
+  { title: "Modern Chevron", category: "Patterned Hardwood", price: "$210 / sqm", image: "/products/21.webp" },
+  { title: "Nordic Ash", category: "Laminate", price: "$65 / sqm", image: "/products/19.webp" },
+  { title: "Velvet Dream", category: "Premium Carpet", price: "$130 / sqm", image: "/products/6.webp" },
 ];
 
 export default function Collections() {
@@ -41,7 +41,7 @@ export default function Collections() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-wrap gap-4 mb-12"
           >
-            {["All", "Carpets", "Hardwood", "Laminate", "Vinyl"].map((cat, i) => (
+            {["All", "Carpets", "Hardwood & Timber", "Laminate", "Vinyl"].map((cat, i) => (
               <button
                 key={i}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
