@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #FFFFFF;
+  --color-primary-foreground: #3B2A1A; /* Dark Brown from Logo */
+  --color-secondary: #F5F5F5;
+  --color-secondary-foreground: #4A3A2A;
+  --color-accent: #D2A769; /* Gold/Tan from Logo */
+  --color-accent-hover: #B88E52;
+  --color-background: #FFFFFF;
+  --color-foreground: #222222;
+  --color-dark: #3B2A1A;
+  --color-dark-foreground: #FFFFFF;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-outfit), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+  .glass-dark {
+    @apply bg-black/60 backdrop-blur-md border border-white/10 shadow-lg text-white;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
