@@ -8,7 +8,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Luxe Floors | Premium Carpet & Hardwood",
+  title: "Rubicon Flooring | Premium Carpet & Hardwood",
   description: "Modern, premium carpets and flooring solutions for your home.",
 };
 
