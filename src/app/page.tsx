@@ -11,25 +11,25 @@ const featuredProducts = [
   {
     title: "Artisan Wool Carpet",
     category: "Premium Carpet",
-    price: "$120 / sqm",
+    price: "$120 AUD / sqm",
     image: "/products/asiancarpet.jpg",
   },
   {
     title: "European White Oak",
     category: "Hardwood",
-    price: "$180 / sqm",
+    price: "$180 AUD / sqm",
     image: "/products/3.webp",
   },
   {
     title: "Midnight Slate Luxury Vinyl",
     category: "Vinyl Plank",
-    price: "$90 / sqm",
+    price: "$90 AUD / sqm",
     image: "/products/vinyl.jpg",
   },
   {
     title: "Cashmere Soft Shag",
     category: "Plush Carpet",
-    price: "$150 / sqm",
+    price: "$150 AUD / sqm",
     image: "/products/9.webp",
   },
 ];
@@ -327,20 +327,22 @@ export default function Home() {
         </section>
 
         {/* Newsletter CTA */}
-        <section className="py-24 bg-[var(--color-accent)] relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent" />
+        <section className="py-24 bg-[var(--color-accent)] relative overflow-hidden group">
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--color-primary)_0%,_transparent_70%)] transition-opacity duration-1000 group-hover:opacity-30" />
           <div className="container relative z-10 mx-auto px-6 max-w-4xl text-center">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Elevate Your Space Today</h2>
-              <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-                Schedule a free in-home consultation with our design experts and bring your vision to life.
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-8 tracking-tighter">
+                Elevate Your Space Today
+              </h2>
+              <p className="text-white/90 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
+                Experience the heritage of Rubicon Flooring. Schedule your complimentary design consultation across Australia today.
               </p>
-              <button className="px-10 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="px-12 py-5 bg-[var(--color-primary-foreground)] text-white font-bold rounded-full hover:bg-white hover:text-[var(--color-primary-foreground)] transition-all duration-500 shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_25px_50px_rgba(0,0,0,0.2)] transform hover:-translate-y-1 active:scale-95 uppercase tracking-widest text-sm">
                 Book Consultation
               </button>
             </motion.div>

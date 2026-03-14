@@ -96,7 +96,7 @@ export default function CartSidebar() {
               <div className="p-6 border-t border-gray-100 bg-gray-50">
                 <div className="flex justify-between items-center mb-6">
                   <span className="text-gray-600 font-medium">Estimated Total</span>
-                  <span className="text-2xl font-bold">${cartTotal.toFixed(2)}</span>
+                  <span className="text-2xl font-bold">${cartTotal.toFixed(2)} AUD</span>
                 </div>
                 <button className="w-full py-4 bg-[var(--color-primary-foreground)] text-white font-bold rounded-xl hover:bg-[var(--color-accent)] transition-colors shadow-lg">
                   Proceed to Checkout

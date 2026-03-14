@@ -13,7 +13,7 @@ const allProducts = [
   {
     title: "Artisan Wool Carpet",
     category: "Premium Carpet",
-    price: "$120 / sqm",
+    price: "$120 AUD / sqm",
     image: "/products/asiancarpet.jpg",
     id: "artisan-1",
     description: "Soft, luxurious, hand-crafted carpets for ultimate comfort and timeless elegance in your space.",
@@ -25,11 +25,11 @@ const allProducts = [
       installation: "Stretch-in Pad"
     }
   },
-  { title: "European White Oak", category: "Hardwood", price: "$180 / sqm", image: "/products/3.webp" },
+  { title: "European White Oak", category: "Hardwood", price: "$180 AUD / sqm", image: "/products/3.webp" },
   {
     title: "Midnight Slate Luxury Vinyl",
     category: "Vinyl Plank",
-    price: "$90 / sqm",
+    price: "$90 AUD / sqm",
     image: "/products/vinyl.jpg", // Updated image path
     id: "vinyl-2", // Added id for cart functionality
     description: "Enjoy the bold aesthetic of midnight slate with the supreme durability and minimal maintenance of luxury vinyl.",
@@ -41,11 +41,11 @@ const allProducts = [
       installation: "Floating/Click-lock"
     }
   },
-  { title: "Cashmere Soft Shag", category: "Plush Carpet", price: "$150 / sqm", image: "/products/9.webp" },
-  { title: "Distressed Walnut", category: "Hardwood", price: "$165 / sqm", image: "/products/11.webp" },
-  { title: "Modern Chevron", category: "Patterned Hardwood", price: "$210 / sqm", image: "/products/21.webp" },
-  { title: "Nordic Ash", category: "Laminate", price: "$65 / sqm", image: "/products/19.webp" },
-  { title: "Velvet Dream", category: "Premium Carpet", price: "$130 / sqm", image: "/products/6.webp" },
+  { title: "Cashmere Soft Shag", category: "Plush Carpet", price: "$150 AUD / sqm", image: "/products/9.webp" },
+  { title: "Distressed Walnut", category: "Hardwood", price: "$165 AUD / sqm", image: "/products/11.webp" },
+  { title: "Modern Chevron", category: "Patterned Hardwood", price: "$210 AUD / sqm", image: "/products/21.webp" },
+  { title: "Nordic Ash", category: "Laminate", price: "$65 AUD / sqm", image: "/products/19.webp" },
+  { title: "Velvet Dream", category: "Premium Carpet", price: "$130 AUD / sqm", image: "/products/6.webp" },
 ];
 
 export default function CategoryPage() { // Reverted to original component signature

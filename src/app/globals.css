@@ -2,14 +2,14 @@
 
 @theme {
   --color-primary: #FFFFFF;
-  --color-primary-foreground: #3B2A1A; /* Dark Brown from Logo */
-  --color-secondary: #F5F5F5;
+  --color-primary-foreground: #2A1B12; /* Richer Dark Brown */
+  --color-secondary: #F8F7F4; /* Muted Off-white */
   --color-secondary-foreground: #4A3A2A;
-  --color-accent: #D2A769; /* Gold/Tan from Logo */
-  --color-accent-hover: #B88E52;
+  --color-accent: #C5A059; /* Elegant Golden Tan */
+  --color-accent-hover: #A88950;
   --color-background: #FFFFFF;
   --color-foreground: #222222;
-  --color-dark: #3B2A1A;
+  --color-dark: #1A110B;
   --color-dark-foreground: #FFFFFF;
 }
 
