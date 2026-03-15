@@ -275,7 +275,7 @@ export default function Home() {
                 className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl"
               >
                 <img 
-                  src="/products/Carpets/carpet3.jpeg" 
+                  src="/products/Carpets/carpet6.jpeg" 
                   alt="Professional Carpet Installation" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
