@@ -42,8 +42,8 @@ const features = [
   },
   {
     icon: <Shield className="w-6 h-6" />,
-    title: "Lifetime Warranty",
-    description: "Peace of mind with our comprehensive lifetime warranty on selected hardwood lines.",
+    title: "Comprehensive Warranty",
+    description: "Peace of mind with a comprehensive warranty on our premium carpet lines and expert installations.",
   },
   {
     icon: <ThumbsUp className="w-6 h-6" />,
@@ -307,7 +307,7 @@ export default function Home() {
                     "Laser-accurate measurements & cutting",
                     "Seamless joins and expert stretching",
                     "Acoustic & thermal underlay specialist",
-                    "Lifetime warranty on all workmanship"
+                    "Comprehensive warranty on all workmanship"
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-gray-800 font-medium">
                       <div className="w-5 h-5 rounded-full bg-[var(--color-accent)] flex items-center justify-center text-white">

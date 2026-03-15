@@ -76,7 +76,7 @@ export default function About() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
+                className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl group"
               >
                 <img 
                   src="/products/Carpets/carpet2.jpeg" 
@@ -86,6 +86,26 @@ export default function About() {
                     (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800";
                   }}
                 />
+                
+                {/* Floating Logo Overlay */}
+                <motion.div
+                  animate={{ 
+                    y: [0, -15, 0],
+                    rotate: [0, 2, -2, 0]
+                  }}
+                  transition={{ 
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]"
+                >
+                  <div className="bg-white/95 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <img src="/logo.png" alt="Rubicon Logo" className="h-16 w-auto" />
+                  </div>
+                </motion.div>
+
+                <div className="absolute inset-0 bg-black/5" />
               </motion.div>
             </div>
           </div>

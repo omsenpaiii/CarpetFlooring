@@ -33,7 +33,7 @@ const allProducts = [
     image: "/products/vinyl.jpg", // Updated image path
     id: "vinyl-2", // Added id for cart functionality
     description: "Enjoy the bold aesthetic of midnight slate with the supreme durability and minimal maintenance of luxury vinyl.",
-    features: ["100% Waterproof", "Scratch & Dent Resistant", "Click-Lock Installation", "Lifetime Residential Warranty"],
+    features: ["100% Waterproof", "Scratch & Dent Resistant", "Click-Lock Installation", "Comprehensive Residential Warranty"],
     specifications: {
       type: "Luxury Vinyl Tile (LVT)",
       thickness: "6.5mm",
