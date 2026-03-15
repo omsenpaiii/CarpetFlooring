@@ -19,11 +19,11 @@ export default function About() {
               initial={{ scale: 1.1 }}
               animate={{ scale: 1 }}
               transition={{ duration: 1.5, ease: "easeOut" }}
-              src="/products/23.webp"
-              alt="Rubicon Flooring Workspace"
+              src="/products/Carpets/carpet1.jpeg"
+              alt="Rubicon Carpet Specialty"
               className="w-full h-full object-cover"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&q=80&w=2000";
+                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=2000";
               }}
             />
             <div className="absolute inset-0 bg-black/40" />
@@ -79,7 +79,7 @@ export default function About() {
                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
               >
                 <img 
-                  src="/products/14.webp" 
+                  src="/products/Carpets/carpet2.jpeg" 
                   alt="Rubicon Craftsmanship" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -114,6 +114,44 @@ export default function About() {
                    </motion.div>
                 ))}
              </div>
+          </div>
+        </section>
+
+        {/* Our Work Section */}
+        <section className="py-24 bg-white">
+          <div className="container mx-auto px-6 max-w-7xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl md:text-5xl font-black text-[var(--color-primary-foreground)] mb-6 tracking-tighter uppercase">Our Work</h2>
+              <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                A showcase of our recent premium carpet installations across Australian homes.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.05 }}
+                  className="relative aspect-square rounded-xl overflow-hidden shadow-md group"
+                >
+                  <img 
+                    src={`/products/Carpets/carpet${i}.jpeg`} 
+                    alt={`Carpet Work ${i}`} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 

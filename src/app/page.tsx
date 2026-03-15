@@ -159,8 +159,8 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/capet-card1.jpg" 
-                       alt="Luxury Carpet Installation" 
+                       src="/products/Carpets/carpet2.jpeg" 
+                       alt="Artisan Wool Carpet" 
                        className="w-full h-full object-cover"
                        onError={(e) => {
                           (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=800";
@@ -180,7 +180,7 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/capet-card2.jpeg" 
+                       src="/products/Carpets/carpet5.jpeg" 
                        alt="Plush Premium Carpet" 
                        className="w-full h-full object-cover"
                        onError={(e) => {
@@ -201,8 +201,8 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/capet-card3.jpg" 
-                       alt="Artisan Carpet Detail" 
+                       src="/products/Carpets/carpet3.jpeg" 
+                       alt="Designer Carpet Collection" 
                        className="w-full h-full object-cover"
                          onError={(e) => {
                           (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=800";
@@ -275,7 +275,7 @@ export default function Home() {
                 className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl"
               >
                 <img 
-                  src="/carpet-install.jpg" 
+                  src="/products/Carpets/carpet3.jpeg" 
                   alt="Professional Carpet Installation" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
