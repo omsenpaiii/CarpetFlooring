@@ -15,6 +15,12 @@ const featuredProducts = [
     image: "/products/asiancarpet.jpg",
   },
   {
+    title: "Cashmere Soft Shag",
+    category: "Plush Carpet",
+    price: "$150 AUD / sqm",
+    image: "/products/9.webp",
+  },
+  {
     title: "European White Oak",
     category: "Hardwood",
     price: "$180 AUD / sqm",
@@ -25,12 +31,6 @@ const featuredProducts = [
     category: "Vinyl Plank",
     price: "$90 AUD / sqm",
     image: "/products/vinyl.jpg",
-  },
-  {
-    title: "Cashmere Soft Shag",
-    category: "Plush Carpet",
-    price: "$150 AUD / sqm",
-    image: "/products/9.webp",
   },
 ];
 
@@ -47,8 +47,8 @@ const features = [
   },
   {
     icon: <ThumbsUp className="w-6 h-6" />,
-    title: "Expert Installation",
-    description: "Our certified professionals ensure a perfect fit and flawless finish every time.",
+    title: "Expert Carpet Installation",
+    description: "Our certified master installers specialize in seamless carpet fitting for a flawless, long-lasting finish.",
   },
   {
     icon: <Truck className="w-6 h-6" />,
@@ -81,10 +81,10 @@ export default function Home() {
               className="text-center max-w-2xl z-20"
             >
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-[var(--color-primary-foreground)] mb-6">
-                Redefining your foundation.
+                Expert Carpet Flooring & Professional Installation.
               </h2>
-              <p className="text-lg md:text-xl text-gray-500 mb-8 max-w-xl mx-auto font-medium">
-                Premium flooring solutions that blend enduring quality with modern elegance.
+              <p className="text-lg md:text-xl text-gray-500 mb-8 max-w-2xl mx-auto font-medium leading-relaxed">
+                Australia's premier destination for high-end carpets and masterclass installations. We bring comfort and prestige to your floors.
               </p>
               <Link href="/collections" className="relative z-30 inline-flex items-center justify-center gap-2 px-8 py-4 bg-[var(--color-primary-foreground)] text-white font-semibold rounded-full hover:bg-[var(--color-accent)] transition-colors duration-300">
                 Explore Collections
@@ -159,8 +159,8 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/products/hero1.jpg" 
-                       alt="Premium Hardwood" 
+                       src="/capet-card1.jpg" 
+                       alt="Luxury Carpet Installation" 
                        className="w-full h-full object-cover"
                        onError={(e) => {
                           (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=800";
@@ -180,8 +180,8 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/products/hero2.jpg" 
-                       alt="Luxury Vinyl" 
+                       src="/capet-card2.jpeg" 
+                       alt="Plush Premium Carpet" 
                        className="w-full h-full object-cover"
                        onError={(e) => {
                           (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800";
@@ -201,8 +201,8 @@ export default function Home() {
               >
                   <div className="w-full h-full rounded-lg overflow-hidden bg-gray-100 relative">
                      <img 
-                       src="/products/hero3.jpg" 
-                       alt="Artisan Carpet" 
+                       src="/capet-card3.jpg" 
+                       alt="Artisan Carpet Detail" 
                        className="w-full h-full object-cover"
                          onError={(e) => {
                           (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=800";
@@ -262,6 +262,69 @@ export default function Home() {
             </div>
           </div>
         </section>
+        
+        {/* Installation Spotlight Section */}
+        <section className="py-24 bg-gray-50 border-y border-gray-100">
+          <div className="container mx-auto px-6 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl"
+              >
+                <img 
+                  src="/carpet-install.jpg" 
+                  alt="Professional Carpet Installation" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=1200";
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                  <div className="text-white">
+                    <p className="text-sm font-bold uppercase tracking-widest mb-2 text-[var(--color-accent)]">Masterclass Installation</p>
+                    <p className="text-xl font-medium italic">"Precision in every fiber, excellence in every room."</p>
+                  </div>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <h2 className="text-3xl md:text-5xl font-black text-[var(--color-primary-foreground)] mb-8 tracking-tighter uppercase">
+                  Flawless Installations. <br/>Guaranteed.
+                </h2>
+                <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+                  Our specialty isn't just providing premium carpets; it's the professional touch we apply when laying them. With over 18 years of experience in high-end Australian homes, our certified installers ensure your carpet is fitted with surgical precision.
+                </p>
+                <ul className="space-y-4 mb-10">
+                  {[
+                    "Laser-accurate measurements & cutting",
+                    "Seamless joins and expert stretching",
+                    "Acoustic & thermal underlay specialist",
+                    "Lifetime warranty on all workmanship"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 text-gray-800 font-medium">
+                      <div className="w-5 h-5 rounded-full bg-[var(--color-accent)] flex items-center justify-center text-white">
+                        <Star className="w-3 h-3 fill-current" />
+                      </div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[var(--color-primary-foreground)] text-white font-bold rounded-full hover:bg-[var(--color-accent)] transition-all duration-300 shadow-xl">
+                  Get a Free Installation Quote
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </motion.div>
+            </div>
+          </div>
+        </section>
 
         {/* Featured Products */}
         <section className="py-24 bg-gray-50">
@@ -301,8 +364,8 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="text-center max-w-3xl mx-auto mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 mt-16 md:mt-0">The Rubicon Difference</h2>
-              <p className="text-gray-400 text-lg">We don't just sell flooring; we provide a foundation for your life's best moments with unparalleled service and quality.</p>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 mt-16 md:mt-0">The Rubicon Legacy</h2>
+              <p className="text-gray-400 text-lg">Specializing in premium carpet solutions and master installations since 2005. We provide the perfect foundation for Australian homes.</p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">

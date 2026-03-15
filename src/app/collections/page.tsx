@@ -7,13 +7,13 @@ import ProductCard from "@/components/ProductCard";
 
 const allProducts = [
   { title: "Artisan Wool Carpet", category: "Premium Carpet", price: "$120 AUD / sqm", image: "/products/asiancarpet.jpg" },
+  { title: "Cashmere Soft Shag", category: "Plush Carpet", price: "$150 AUD / sqm", image: "/products/9.webp" },
+  { title: "Velvet Dream", category: "Premium Carpet", price: "$130 AUD / sqm", image: "/products/6.webp" },
   { title: "European White Oak", category: "Hardwood & Timber", price: "$180 AUD / sqm", image: "/products/3.webp" },
   { title: "Midnight Slate Luxury Vinyl", category: "Vinyl Plank", price: "$90 AUD / sqm", image: "/products/vinyl.jpg" },
-  { title: "Cashmere Soft Shag", category: "Plush Carpet", price: "$150 AUD / sqm", image: "/products/9.webp" },
   { title: "Distressed Walnut", category: "Hardwood & Timber", price: "$165 AUD / sqm", image: "/products/11.webp" },
   { title: "Modern Chevron", category: "Patterned Hardwood", price: "$210 AUD / sqm", image: "/products/21.webp" },
   { title: "Nordic Ash", category: "Laminate", price: "$65 AUD / sqm", image: "/products/19.webp" },
-  { title: "Velvet Dream", category: "Premium Carpet", price: "$130 AUD / sqm", image: "/products/6.webp" },
 ];
 
 export default function Collections() {

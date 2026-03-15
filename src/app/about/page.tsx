@@ -60,13 +60,13 @@ export default function About() {
                 </h2>
                 <div className="space-y-6 text-gray-600 text-lg">
                   <p>
-                    At Rubicon Flooring, we believe that every great room starts from the ground up. What began as a small boutique Australian showroom has grown into a leading destination for premium hardwood, plush carpets, and luxury vinyl.
+                    At Rubicon Flooring, we believe that the soul of a home is in the comfort underfoot. What began as a specialized carpet boutique in Australia has grown into the region's leading authority on premium carpet flooring and precision installations.
                   </p>
                   <p>
-                    Our mission is simple: to provide our clients with exceptional materials that blend timeless craftsmanship with contemporary design. We curate our collections meticulously, ensuring that every plank and every thread meets our rigorous standards for durability and aesthetics.
+                    Our core mission has always been centered on carpet excellence. While we offer a full suite of flooring options, our heart remains in the artistry of carpet selection and the technical mastery required for a perfect installation. We ensure every fiber is laid with surgical precision.
                   </p>
                   <p className="font-medium text-gray-900 border-l-2 border-[var(--color-accent)] pl-4 italic py-2">
-                    "We don't just sell flooring; we provide the foundation for your most cherished memories."
+                    "We don't just lay carpets; we provide the foundation for your comfort and peace of mind."
                   </p>
                 </div>
               </motion.div>

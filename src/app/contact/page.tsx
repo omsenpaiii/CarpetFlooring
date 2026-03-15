@@ -69,8 +69,8 @@ export default function Contact() {
                       <MapPin className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-medium text-gray-900">Showroom Location</h3>
-                      <p className="text-gray-500 mt-1">123 Design Avenue<br />New York, NY 10001</p>
+                      <h3 className="font-medium text-gray-900">Melbourne Showroom</h3>
+                      <p className="text-gray-500 mt-1">456 Collins Street<br />Melbourne, VIC 3000</p>
                     </div>
                   </div>
                   
@@ -80,7 +80,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-medium text-gray-900">Phone</h3>
-                      <p className="text-gray-500 mt-1">+1 (555) 123-4567<br />Mon-Fri 9am to 6pm EST</p>
+                      <p className="text-gray-500 mt-1">+61 (03) 9123 4567<br />Mon-Fri 9am to 6pm AEST</p>
                     </div>
                   </div>
 
