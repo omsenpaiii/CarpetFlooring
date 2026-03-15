@@ -66,9 +66,9 @@ export default function Home() {
         <section className="relative min-h-[90vh] flex items-center justify-center bg-white overflow-hidden pt-10 pb-20">
           {/* Background Text Element */}
           <div className="absolute top-[28%] left-0 w-full flex justify-center z-0 pointer-events-none opacity-[0.03]">
-            <h1 className="text-[20vw] font-black leading-none tracking-tighter text-[var(--color-primary-foreground)] whitespace-nowrap">
+            <div className="text-[20vw] font-black leading-none tracking-tighter text-[var(--color-primary-foreground)] whitespace-nowrap select-none">
               RUBICON
-            </h1>
+            </div>
           </div>
           
           <div className="container relative z-10 mx-auto px-6 max-w-7xl flex flex-col items-center justify-center h-full gap-8 mt-4">
@@ -80,9 +80,9 @@ export default function Home() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-center max-w-2xl z-20"
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-[var(--color-primary-foreground)] mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-[var(--color-primary-foreground)] mb-6">
                 Expert Carpet Flooring & Professional Installation.
-              </h2>
+              </h1>
               <p className="text-lg md:text-xl text-gray-500 mb-8 max-w-2xl mx-auto font-medium leading-relaxed">
                 Australia's premier destination for high-end carpets and masterclass installations. We bring comfort and prestige to your floors.
               </p>

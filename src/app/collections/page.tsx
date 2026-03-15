@@ -28,7 +28,7 @@ export default function Collections() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Our Collections</h1>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Premium Flooring Collections Australia</h1>
             <p className="text-gray-500 text-lg max-w-2xl">
               Browse through our meticulously curated selection of premium floorings. Filter by category, style, and material to find exactly what you need.
             </p>

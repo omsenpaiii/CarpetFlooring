@@ -10,8 +10,26 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Rubicon Flooring | Premium Carpet & Hardwood Australia",
-  description: "Modern, premium carpets and flooring solutions for your home in Australia.",
+  title: "Rubicon Flooring Australia | Expert Carpet Flooring & Master Installation",
+  description: "Experience Rubicon Flooring - Australia's premier destination for high-end carpets and professional installation. Premium wool carpets, plush collections, and masterclass flooring services across Melbourne and Australia.",
+  keywords: ["Rubicon Flooring", "Rubicon Flooring Australia", "Carpet Installation Australia", "Premium Carpet Melbourne", "Wool Carpets Australia", "Professional Flooring Installation", "Luxury Carpets Australia"],
+  authors: [{ name: "Rubicon Flooring" }],
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://rubicon-flooring.vercel.app",
+  },
+  openGraph: {
+    title: "Rubicon Flooring Australia | Expert Carpet & Installation",
+    description: "Premium carpets and masterclass installation services across Australia. Transform your home with Rubicon's high-end flooring solutions.",
+    url: "https://rubicon-flooring.vercel.app",
+    siteName: "Rubicon Flooring",
+    locale: "en_AU",
+    type: "website",
+  },
+  verification: {
+    google: "Q6Ldm0sovSRzNdbw_i1kofOLB15GmjRiCDZeG0W5Zyg",
+  },
 };
 
 export default function RootLayout({

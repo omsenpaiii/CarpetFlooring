@@ -36,7 +36,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h1 className="text-5xl md:text-6xl font-black tracking-tighter text-white mb-6 uppercase">
-                Our Story
+                The Rubicon Story
               </h1>
               <p className="text-xl text-gray-200 font-medium leading-relaxed max-w-2xl mx-auto">
                 Crafting the perfect foundation for life's best moments with uncompromising quality and modern elegance.
