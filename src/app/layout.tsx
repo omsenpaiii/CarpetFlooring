@@ -10,20 +10,20 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Rubicon Flooring Australia | Expert Carpet Flooring & Master Installation",
-  description: "Experience Rubicon Flooring - Australia's premier destination for high-end carpets and professional installation. Premium wool carpets, plush collections, and masterclass flooring services across Melbourne and Australia.",
-  keywords: ["Rubicon Flooring", "Rubicon Flooring Australia", "Carpet Installation Australia", "Premium Carpet Melbourne", "Wool Carpets Australia", "Professional Flooring Installation", "Luxury Carpets Australia"],
-  authors: [{ name: "Rubicon Flooring" }],
+  title: "Prestige Carpet Solutions Australia | Expert Carpet Flooring & Master Installation",
+  description: "Experience Prestige Carpet Solutions - Australia's premier destination for high-end carpets and professional installation. Premium wool carpets, plush collections, and masterclass flooring services across Melbourne and Australia.",
+  keywords: ["Prestige Carpet Solutions", "Prestige Carpet Solutions Australia", "Carpet Installation Australia", "Premium Carpet Melbourne", "Wool Carpets Australia", "Professional Flooring Installation", "Luxury Carpets Australia"],
+  authors: [{ name: "Prestige Carpet Solutions" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   alternates: {
-    canonical: "https://rubicon-flooring.vercel.app",
+    canonical: "https://prestigecarpetsolutions.vercel.app",
   },
   openGraph: {
-    title: "Rubicon Flooring Australia | Expert Carpet & Installation",
-    description: "Premium carpets and masterclass installation services across Australia. Transform your home with Rubicon's high-end flooring solutions.",
-    url: "https://rubicon-flooring.vercel.app",
-    siteName: "Rubicon Flooring",
+    title: "Prestige Carpet Solutions Australia | Expert Carpet & Installation",
+    description: "Premium carpets and masterclass installation services across Australia. Transform your home with Prestige's high-end flooring solutions.",
+    url: "https://prestigecarpetsolutions.vercel.app",
+    siteName: "Prestige Carpet Solutions",
     locale: "en_AU",
     type: "website",
   },

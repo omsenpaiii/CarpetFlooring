@@ -2,15 +2,16 @@
 
 @theme {
   --color-primary: #FFFFFF;
-  --color-primary-foreground: #2A1B12; /* Richer Dark Brown */
-  --color-secondary: #F8F7F4; /* Muted Off-white */
-  --color-secondary-foreground: #4A3A2A;
-  --color-accent: #C5A059; /* Elegant Golden Tan */
-  --color-accent-hover: #A88950;
+  --color-primary-foreground: #132B45; /* Deep Navy */
+  --color-secondary: #F4F7FA; /* Muted Soft Cool White */
+  --color-secondary-foreground: #1E3A5F;
+  --color-accent: #C59A3F; /* Regal Gold */
+  --color-accent-hover: #A57F2E;
   --color-background: #FFFFFF;
-  --color-foreground: #222222;
-  --color-dark: #1A110B;
+  --color-foreground: #1D252C;
+  --color-dark: #0B1B2D; /* Rich Navy Dark */
   --color-dark-foreground: #FFFFFF;
+  --color-slate-blue: #5C8DA6;
 }
 
 @layer base {

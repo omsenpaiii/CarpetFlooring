@@ -20,7 +20,7 @@ export default function About() {
               animate={{ scale: 1 }}
               transition={{ duration: 1.5, ease: "easeOut" }}
               src="/products/Carpets/carpet1.jpeg"
-              alt="Rubicon Carpet Specialty"
+              alt="Prestige Carpet Specialty"
               className="w-full h-full object-cover"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=2000";
@@ -36,7 +36,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h1 className="text-5xl md:text-6xl font-black tracking-tighter text-white mb-6 uppercase">
-                The Rubicon Story
+                The Prestige Story
               </h1>
               <p className="text-xl text-gray-200 font-medium leading-relaxed max-w-2xl mx-auto">
                 Crafting the perfect foundation for life's best moments with uncompromising quality and modern elegance.
@@ -60,7 +60,7 @@ export default function About() {
                 </h2>
                 <div className="space-y-6 text-gray-600 text-lg">
                   <p>
-                    At Rubicon Flooring, we believe that the soul of a home is in the comfort underfoot. What began as a specialized carpet boutique in Australia has grown into the region's leading authority on premium carpet flooring and precision installations.
+                    At Prestige Carpet Solutions, we believe that the soul of a home is in the comfort underfoot. What began as a specialized carpet boutique in Australia has grown into the region's leading authority on premium carpet flooring and precision installations.
                   </p>
                   <p>
                     Our core mission has always been centered on carpet excellence. While we offer a full suite of flooring options, our heart remains in the artistry of carpet selection and the technical mastery required for a perfect installation. We ensure every fiber is laid with surgical precision.
@@ -80,7 +80,7 @@ export default function About() {
               >
                 <img 
                   src="/products/Carpets/carpet2.jpeg" 
-                  alt="Rubicon Craftsmanship" 
+                  alt="Prestige Craftsmanship" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800";
@@ -101,7 +101,7 @@ export default function About() {
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]"
                 >
                   <div className="bg-white/95 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
-                    <img src="/logo.png" alt="Rubicon Logo" className="h-16 w-auto" />
+                    <img src="/logo.png" alt="Prestige Logo" className="h-16 w-auto" />
                   </div>
                 </motion.div>
 

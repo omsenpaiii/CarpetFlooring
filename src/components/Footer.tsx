@@ -8,15 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8 mb-16">
           <div className="md:col-span-1">
             <Link href="/" className="inline-flex bg-white/95 px-5 py-4 rounded-xl mb-6 shadow-sm">
-              <img src="/logo.png" alt="Rubicon Flooring" className="h-14 md:h-16 w-auto object-contain" />
+              <img src="/logo.png" alt="Prestige Carpet Solutions" className="h-14 md:h-16 w-auto object-contain" />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed mb-6 max-w-sm">
-              Elevating Australian spaces with premium flooring solutions.
+              Elevating Australian spaces with premium carpet and flooring solutions.
             </p>
             <div className="flex gap-4 text-gray-400">
-              <a href="#" className="hover:text-[#D4AF37] transition-colors"><Instagram className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-[#D4AF37] transition-colors"><Facebook className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-[#D4AF37] transition-colors"><Twitter className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-[var(--color-accent)] transition-colors"><Instagram className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-[var(--color-accent)] transition-colors"><Facebook className="w-5 h-5" /></a>
+              <a href="#" className="hover:text-[var(--color-accent)] transition-colors"><Twitter className="w-5 h-5" /></a>
             </div>
           </div>
           
@@ -57,7 +57,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-gray-800/50 flex flex-col md:flex-row items-center justify-between text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} Rubicon Flooring. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Prestige Carpet Solutions. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

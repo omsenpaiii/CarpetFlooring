@@ -67,7 +67,7 @@ export default function Home() {
           {/* Background Text Element */}
           <div className="absolute top-[28%] left-0 w-full flex justify-center z-0 pointer-events-none opacity-[0.03]">
             <div className="text-[20vw] font-black leading-none tracking-tighter text-[var(--color-primary-foreground)] whitespace-nowrap select-none">
-              RUBICON
+              PRESTIGE
             </div>
           </div>
           
@@ -364,7 +364,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="text-center max-w-3xl mx-auto mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 mt-16 md:mt-0">The Rubicon Legacy</h2>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 mt-16 md:mt-0">The Prestige Legacy</h2>
               <p className="text-gray-400 text-lg">Specializing in premium carpet solutions and master installations since 2005. We provide the perfect foundation for Australian homes.</p>
             </motion.div>
 
@@ -403,7 +403,7 @@ export default function Home() {
                 Elevate Your Space Today
               </h2>
               <p className="text-white/90 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-                Experience the heritage of Rubicon Flooring. Schedule your complimentary design consultation across Australia today.
+                Experience the heritage of Prestige Carpet Solutions. Schedule your complimentary design consultation across Australia today.
               </p>
               <button className="px-12 py-5 bg-[var(--color-primary-foreground)] text-white font-bold rounded-full hover:bg-white hover:text-[var(--color-primary-foreground)] transition-all duration-500 shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_25px_50px_rgba(0,0,0,0.2)] transform hover:-translate-y-1 active:scale-95 uppercase tracking-widest text-sm">
                 Book Consultation

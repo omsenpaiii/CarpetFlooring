@@ -110,7 +110,7 @@ export default function CategoryPage() { // Reverted to original component signa
                     {specificProduct.price}
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-8">
-                     {specificProduct.description || "This exceptional flooring solution embodies the Rubicon commitment to quality. Carefully crafted to provide both enduring beauty and lasting durability, it transforms any room into a masterpiece of modern design."}
+                     {specificProduct.description || "This exceptional flooring solution embodies the Prestige commitment to quality. Carefully crafted to provide both enduring beauty and lasting durability, it transforms any room into a masterpiece of modern design."}
                   </p>
                   {specificProduct.features && specificProduct.features.length > 0 && (
                     <div className="mb-8">

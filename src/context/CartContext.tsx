@@ -30,7 +30,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true);
-    const savedCart = localStorage.getItem("rubicon_cart");
+    const savedCart = localStorage.getItem("prestige_cart");
     if (savedCart) {
       try {
         setCart(JSON.parse(savedCart));
@@ -42,7 +42,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (mounted) {
-      localStorage.setItem("rubicon_cart", JSON.stringify(cart));
+      localStorage.setItem("prestige_cart", JSON.stringify(cart));
     }
   }, [cart, mounted]);
 
