@@ -37,7 +37,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <img src="/logo.png" alt="Prestige Carpet Solutions Logo" className="h-10 md:h-12 w-auto object-contain" />
+          <img src="/logo.png" alt="Prestige Carpet Solutions Logo" className="h-14 md:h-16 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
